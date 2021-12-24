@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InboxView" customModule="Lexor_iOS_ShopOwnerEmployee" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="Ztv-gK-uza" id="CzO-dE-ksY"/>
+                <outlet property="descriptionLabel" destination="4Wb-cW-cYD" id="K4g-7p-mjS"/>
+                <outlet property="titleLabel" destination="syj-03-wUN" id="Qas-sa-ZRO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PA0-qr-PG5">
+                    <rect key="frame" x="0.0" y="0.0" width="365" height="116"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-uI-jnh">
+                            <rect key="frame" x="0.0" y="0.0" width="10" height="116"/>
+                            <color key="backgroundColor" red="0.33333333333333331" green="0.72549019607843135" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="sJd-SR-MEj"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-circle-i" translatesAutoresizingMaskIntoConstraints="NO" id="7gu-el-NRi">
+                            <rect key="frame" x="20" y="20" width="21" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7gu-el-NRi" secondAttribute="height" multiplier="1:1" id="fE4-7e-r0i"/>
+                                <constraint firstAttribute="width" constant="21" id="p7r-Lf-wbU"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7qa-l8-Ydw">
+                            <rect key="frame" x="51" y="15" width="261" height="86"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any recent changes to share ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syj-03-wUN">
+                                    <rect key="frame" x="0.0" y="0.0" width="261" height="18"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <color key="textColor" red="0.19607843137254902" green="0.17254901960784313" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give customers the latest about your health and safety measures, offerings, and hours. Update now" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wb-cW-cYD">
+                                    <rect key="frame" x="0.0" y="35.5" width="261" height="50.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.19607843137254902" green="0.17254901960784313" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztv-gK-uza">
+                            <rect key="frame" x="327" y="20" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="UsL-bf-sn2"/>
+                                <constraint firstAttribute="width" secondItem="Ztv-gK-uza" secondAttribute="height" multiplier="1:1" id="bUK-eu-fkW"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-delete-black"/>
+                            <connections>
+                                <action selector="closeButtonTouchUpInsideButton:" destination="-1" eventType="touchUpInside" id="5vM-x3-Kkc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.97254901960784312" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="7qa-l8-Ydw" firstAttribute="top" secondItem="PA0-qr-PG5" secondAttribute="top" constant="15" id="CyW-4B-fsM"/>
+                        <constraint firstItem="7gu-el-NRi" firstAttribute="leading" secondItem="GqM-uI-jnh" secondAttribute="trailing" constant="10" id="DGV-wH-aXC"/>
+                        <constraint firstItem="Ztv-gK-uza" firstAttribute="top" secondItem="PA0-qr-PG5" secondAttribute="top" constant="20" id="PQl-qS-8kg"/>
+                        <constraint firstItem="GqM-uI-jnh" firstAttribute="leading" secondItem="PA0-qr-PG5" secondAttribute="leading" id="acV-LL-3V9"/>
+                        <constraint firstAttribute="bottom" secondItem="GqM-uI-jnh" secondAttribute="bottom" id="aot-mP-Pqd"/>
+                        <constraint firstItem="Ztv-gK-uza" firstAttribute="leading" secondItem="7qa-l8-Ydw" secondAttribute="trailing" constant="15" id="bHl-Ps-jNB"/>
+                        <constraint firstAttribute="trailing" secondItem="Ztv-gK-uza" secondAttribute="trailing" constant="18" id="e8j-NN-Dnt"/>
+                        <constraint firstAttribute="bottom" secondItem="7qa-l8-Ydw" secondAttribute="bottom" constant="15" id="gsm-AB-Oth"/>
+                        <constraint firstItem="7qa-l8-Ydw" firstAttribute="leading" secondItem="7gu-el-NRi" secondAttribute="trailing" constant="10" id="l1l-7D-e5t"/>
+                        <constraint firstItem="7gu-el-NRi" firstAttribute="top" secondItem="PA0-qr-PG5" secondAttribute="top" constant="20" id="vKq-uO-rNj"/>
+                        <constraint firstItem="GqM-uI-jnh" firstAttribute="top" secondItem="PA0-qr-PG5" secondAttribute="top" id="vco-MY-e2S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PA0-qr-PG5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EJs-l8-R3N"/>
+                <constraint firstItem="PA0-qr-PG5" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="bLa-kJ-w9N"/>
+                <constraint firstAttribute="bottom" secondItem="PA0-qr-PG5" secondAttribute="bottom" id="i0X-wC-1ng"/>
+                <constraint firstItem="PA0-qr-PG5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pah-J1-jlm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-4.6875" y="61.267605633802816"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-circle-i" width="50" height="50"/>
+        <image name="ic-delete-black" width="50" height="50"/>
+    </resources>
+</document>

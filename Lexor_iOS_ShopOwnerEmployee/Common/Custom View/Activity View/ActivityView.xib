@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityView" customModule="Lexor_iOS_ShopOwnerEmployee" customModuleProvider="target">
+            <connections>
+                <outlet property="itemCloseButton" destination="bj7-BH-6QJ" id="UtC-2v-9ZO"/>
+                <outlet property="itemContainerView" destination="HNz-Sm-pHV" id="jz3-U8-amA"/>
+                <outlet property="itemDescriptionLabel" destination="tOo-NG-9WY" id="b0i-Sh-CUb"/>
+                <outlet property="itemSubmitButton" destination="tFz-N8-YZF" id="8ot-85-ChF"/>
+                <outlet property="itemTitleLabel" destination="01q-IA-0Og" id="Rnh-co-etW"/>
+                <outlet property="mainTitleLabel" destination="uUG-Bh-SAw" id="udx-J5-vnh"/>
+                <outlet property="percentCircleView" destination="jdQ-se-gvD" id="q8x-eY-jYk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="234"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GiS-Lp-ZhX">
+                    <rect key="frame" x="0.0" y="0.0" width="365" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strengthen Your Presence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUG-Bh-SAw">
+                            <rect key="frame" x="16" y="18.5" width="237.5" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdQ-se-gvD" customClass="PercentCircleView" customModule="Lexor_iOS_ShopOwnerEmployee" customModuleProvider="target">
+                            <rect key="frame" x="310" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="jdQ-se-gvD" secondAttribute="height" multiplier="1:1" id="ORo-nk-q18"/>
+                                <constraint firstAttribute="width" constant="40" id="ZjX-bd-g62"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="jdQ-se-gvD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uUG-Bh-SAw" secondAttribute="trailing" constant="10" id="JwT-wm-mfg"/>
+                        <constraint firstAttribute="height" constant="60" id="Zn0-p6-Pdh"/>
+                        <constraint firstItem="jdQ-se-gvD" firstAttribute="centerY" secondItem="GiS-Lp-ZhX" secondAttribute="centerY" id="no6-vf-80q"/>
+                        <constraint firstItem="uUG-Bh-SAw" firstAttribute="leading" secondItem="GiS-Lp-ZhX" secondAttribute="leading" constant="16" id="ntn-68-12I"/>
+                        <constraint firstItem="uUG-Bh-SAw" firstAttribute="centerY" secondItem="GiS-Lp-ZhX" secondAttribute="centerY" id="pYy-tS-ojw"/>
+                        <constraint firstAttribute="trailing" secondItem="jdQ-se-gvD" secondAttribute="trailing" constant="15" id="uYM-lV-5XI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNz-Sm-pHV">
+                    <rect key="frame" x="15" y="65" width="320" height="164"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build trust" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01q-IA-0Og">
+                            <rect key="frame" x="60" y="25" width="76.5" height="10.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj7-BH-6QJ">
+                            <rect key="frame" x="293" y="10" width="17" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="17" id="hEk-BA-dy2"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-delete-black"/>
+                            <connections>
+                                <action selector="itemCloseButtonTouchUpInsideButton:" destination="-1" eventType="touchUpInside" id="4tz-bT-4em"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Include holiday hours or special schedules and keep customers up to date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOo-NG-9WY">
+                            <rect key="frame" x="15" y="60.5" width="290" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFz-N8-YZF">
+                            <rect key="frame" x="15" y="109" width="290" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dTd-4T-XDg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="Add Special Hours">
+                                <color key="titleColor" red="0.33333333333333331" green="0.72549019607843135" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="itemSubmitButtonTouchUpInsideButton:" destination="-1" eventType="touchUpInside" id="uwG-Wo-N42"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="01q-IA-0Og" firstAttribute="leading" secondItem="HNz-Sm-pHV" secondAttribute="leading" constant="60" id="6ls-hY-MBh"/>
+                        <constraint firstAttribute="trailing" secondItem="tFz-N8-YZF" secondAttribute="trailing" constant="15" id="7BJ-76-5UM"/>
+                        <constraint firstItem="01q-IA-0Og" firstAttribute="top" secondItem="HNz-Sm-pHV" secondAttribute="top" constant="25" id="7Rh-ve-Ii4"/>
+                        <constraint firstAttribute="bottom" secondItem="tFz-N8-YZF" secondAttribute="bottom" constant="15" id="C9F-3i-KcP"/>
+                        <constraint firstItem="tOo-NG-9WY" firstAttribute="leading" secondItem="HNz-Sm-pHV" secondAttribute="leading" constant="15" id="D1L-jK-031"/>
+                        <constraint firstItem="tFz-N8-YZF" firstAttribute="top" secondItem="tOo-NG-9WY" secondAttribute="bottom" constant="15" id="KYn-Gc-aBB"/>
+                        <constraint firstAttribute="trailing" secondItem="tOo-NG-9WY" secondAttribute="trailing" constant="15" id="Max-s1-3PH"/>
+                        <constraint firstItem="bj7-BH-6QJ" firstAttribute="top" secondItem="HNz-Sm-pHV" secondAttribute="top" constant="10" id="QoX-Rw-2wh"/>
+                        <constraint firstItem="bj7-BH-6QJ" firstAttribute="width" secondItem="bj7-BH-6QJ" secondAttribute="height" multiplier="1:1" id="d6f-TT-yMz"/>
+                        <constraint firstAttribute="trailing" secondItem="bj7-BH-6QJ" secondAttribute="trailing" constant="10" id="gyn-hb-Tm5"/>
+                        <constraint firstItem="tFz-N8-YZF" firstAttribute="leading" secondItem="HNz-Sm-pHV" secondAttribute="leading" constant="15" id="uUm-hh-BBI"/>
+                        <constraint firstItem="tOo-NG-9WY" firstAttribute="top" secondItem="01q-IA-0Og" secondAttribute="bottom" constant="25" id="vtt-xb-yjf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HNz-Sm-pHV" secondAttribute="trailing" constant="30" id="2Md-RK-HVN"/>
+                <constraint firstItem="HNz-Sm-pHV" firstAttribute="top" secondItem="GiS-Lp-ZhX" secondAttribute="bottom" constant="5" id="4db-fa-DIK"/>
+                <constraint firstItem="HNz-Sm-pHV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="4qp-5X-2se"/>
+                <constraint firstAttribute="bottom" secondItem="HNz-Sm-pHV" secondAttribute="bottom" constant="5" id="Nx6-xU-Rg4"/>
+                <constraint firstItem="GiS-Lp-ZhX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RSy-Sg-g3L"/>
+                <constraint firstItem="GiS-Lp-ZhX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VxA-Qu-qNp"/>
+                <constraint firstAttribute="trailing" secondItem="GiS-Lp-ZhX" secondAttribute="trailing" id="ap5-nZ-uDr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-6.5625" y="-144.71830985915494"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-delete-black" width="50" height="50"/>
+    </resources>
+</document>

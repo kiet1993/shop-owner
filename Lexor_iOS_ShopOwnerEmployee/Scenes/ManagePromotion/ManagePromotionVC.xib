@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManagePromotionVC" customModule="Lexor_iOS_ShopOwnerEmployee" customModuleProvider="target">
+            <connections>
+                <outlet property="addNewPromotionButton" destination="Z2X-2O-ccS" id="jd3-G7-TS4"/>
+                <outlet property="listPromotionCollectionView" destination="2ww-QM-qyI" id="TTB-vU-i09"/>
+                <outlet property="searchTextField" destination="cb1-Ch-gbs" id="V1x-7Q-nFR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-Ch-gbs" customClass="CustomLeftIconTextfield" customModule="Lexor_iOS_ShopOwnerEmployee" customModuleProvider="target">
+                    <rect key="frame" x="20" y="54" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dOp-RP-na0"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.98823529409999999" green="0.59215686270000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="searchTextFieldDidChange:" destination="-1" eventType="editingChanged" id="6PT-5S-0NJ"/>
+                    </connections>
+                </textField>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2ww-QM-qyI">
+                    <rect key="frame" x="0.0" y="104" width="414" height="698"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lkx-hB-TED">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J11-Si-HDs">
+                    <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2X-2O-ccS">
+                            <rect key="frame" x="20" y="10" width="374" height="40"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.61176470589999998" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="E67-El-wFh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapAddNewPromotion:" destination="-1" eventType="touchUpInside" id="49O-eP-zSf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Z2X-2O-ccS" firstAttribute="top" secondItem="J11-Si-HDs" secondAttribute="top" constant="10" id="Bsc-kw-jDc"/>
+                        <constraint firstItem="Z2X-2O-ccS" firstAttribute="leading" secondItem="J11-Si-HDs" secondAttribute="leading" constant="20" id="GXK-Oq-nqP"/>
+                        <constraint firstAttribute="trailing" secondItem="Z2X-2O-ccS" secondAttribute="trailing" constant="20" id="bSn-LG-zbN"/>
+                        <constraint firstAttribute="bottom" secondItem="Z2X-2O-ccS" secondAttribute="bottom" constant="10" id="tGn-sI-U3k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cb1-Ch-gbs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Gac-f5-FpH"/>
+                <constraint firstAttribute="trailing" secondItem="J11-Si-HDs" secondAttribute="trailing" id="J5D-gj-g3x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2ww-QM-qyI" secondAttribute="trailing" id="Pnc-fJ-SiK"/>
+                <constraint firstItem="J11-Si-HDs" firstAttribute="top" secondItem="2ww-QM-qyI" secondAttribute="bottom" id="QDF-R7-Hp5"/>
+                <constraint firstItem="2ww-QM-qyI" firstAttribute="top" secondItem="cb1-Ch-gbs" secondAttribute="bottom" constant="10" id="Qo9-xq-v6X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J11-Si-HDs" secondAttribute="bottom" id="X1F-sT-D9V"/>
+                <constraint firstItem="J11-Si-HDs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="drB-IN-TNm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cb1-Ch-gbs" secondAttribute="trailing" constant="20" id="lGo-UF-xCQ"/>
+                <constraint firstItem="cb1-Ch-gbs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="sjk-mS-g9k"/>
+                <constraint firstItem="2ww-QM-qyI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xgL-wc-oac"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="87"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
